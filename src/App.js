@@ -8,13 +8,19 @@ import React from 'react';
 class App extends React.Component {
 
   state = {
-    name: 'Eric',
+    name: 'Haryphamdev',
     address: 'Hoi Dan IT',
     age: 26
   }
 
-  handleClick(event) {
+  handleClick = (event) => {
     console.log('>> Click me my button')
+    console.log('random ', Math.floor((Math.random() * 100) + 1))
+
+    this.setState({
+      name: 'Eric'
+    })
+
   }
 
   handleOnMouseOver(event) {
